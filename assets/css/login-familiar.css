@@ -1,0 +1,349 @@
+/*CSS geral, pra toda página*/
+*{ 
+    margin: 0; /*Margens '0', nenhum espaço entre o site e suas bordas.*/
+    box-sizing: border-box;/*'box-sizinng: border-box', tira o tamanho padrão das bordas dos elementos*/
+    font-family: Nexa, 'Segoe UI', Arial;/*Fontes padrões usadas*/
+    font-weight: 500;/*Grossura da letra*/
+    
+}
+
+body{
+
+    overflow-x: hidden;
+}
+
+
+
+/*CSS do cabeçalho*/
+header{
+    width: 100vw;/*'width: 100vw', largura do cabeçalho em 100vw, 100% da largura do viewport width, ou seja, 100% da largura da tela do dispositivo*/
+    height: 10vh;/*'height: 100vh', altura do cabeçalho em 10vw, 10% da altura do viewport height, ou seja, 10% da altura da tela do dispositivo*/
+    display: flex;/*'display: flex', trasforma um espaço em um flex-container, pra alinhar e distribuir os itens.*/
+    justify-content: flex-end;/*'justify-content: flex-end', alinha os itens no final do container, no eixo principal, nesse caso, o eixo 'x', horizontal*/
+    
+}
+
+/*CSS de todos os Textos em ciano*/
+span{
+    color:#00B7EA;/*Cor texto*/
+}
+
+/*CSS de 'Faça seu cadastro como'*/
+h3{
+    font-weight: 100;/*Grossura da fonte'*/
+}
+ 
+
+/*CSS do retângulo ciano do cabeçalho*/
+.cien-form-header{
+    background: #2065AA;/*Cor do retângulo*/
+    width: 10vw;/*'width: 10vw', largura do retângulo do cabeçalho em 10vw, 10% da largura do viewport width, ou seja, 10% da largura da tela do dispositivo*/
+    height: 10vh;/*'height: 10vh', altura do retângulo do cabeçalho em 10vh, 10% da altura do viewport height, ou seja, 10% da altura da tela do dispositivo*/
+    opacity: 0.8;/*'opacity:0.8' configura a opacidade do elemento entre 0.1 e 1.0, o maior valor deixa mais visível, e o menor menos vísivel   */
+
+}
+
+
+/*CSS do retângulo escuro do cabeçalho*/
+.navy-blue-form-header{
+    width: 15vw;/*'width: 15vw', largura do retângulo do cabeçalho em 15vw, 15% da largura do viewport width, ou seja, 10% da largura da tela do dispositivo*/
+    height: 5vh;/*'height: 10vh', altura do retângulo do cabeçalho em 10vh, 10% da altura do viewport height, ou seja, 10% da altura da tela do dispositivo*/
+    position: fixed;/*Posição Fixa, acima de tudo*/
+    background:#121220;/*Cor de Fundo*/
+    
+}
+
+
+/*CSS Flex-container, engloba o container-login*/
+.flex-container{
+    width: 100vw;/*'width: 100vw', largura do cabeçalho em 100vw, 100% da largura do viewport width, ou seja, 100% da largura da tela do dispositivo*/
+    height: 80vh;/*'height: 80vh', altura do cabeçalho em 80vw, 80% da altura do viewport height, ou seja, 80% da altura da tela do dispositivo*/
+    display: flex;/*'display: flex', transforma um espaço em um flex-container, pra alinhar e distribuir os itens.*/
+    justify-content: center;/*'justify-content: center', alinha os itens no centro do container, no eixo principal, nesse caso, o eixo 'x', horizontal*/
+    align-items: center;/*'align-items: center', alinha os itens no centro do container, no eixo secundário, nesse caso, o eixo 'y', vertical*/
+
+
+}
+
+
+/*CSS card-login*/
+.card-sign-in{
+    width: 850px;/*'width: 850px', largura de 850 pixels*/
+    height: 780px;/*'height: 780px', altura de 780 pixels*/
+    padding: 2% 4.5%;/*'padding: 2% 4.5%', padding é outro tipo de margem, de dentro dos itens, o valor '2%x' é a margem da altura, '4.5%' a margem da largura, baseando nas medidas em pixels do card-login*/
+    background: #FFFFFF;/*Cor de fundo do card*/
+    border: 2px solid rgba(180, 180, 180, 0.6);/*Borda cinza*/  
+    box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.25);/*Sombra do card de login*/  
+    border-radius: 15px;/*Bordas arrendondadas*/ 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*CSS do container da logo e do nome, logo-name*/
+.logo-name{
+    display: flex;/*'display: flex', transforma um espaço em um flex-container, pra alinhar e distribuir os itens.*/
+    flex-direction: column;/*'flex-direction: column', direção em que os itens vão se organizar, nesse caso, em colunas*/
+    align-items: center;/*'align-items: center', alinha os itens no centro do container, no eixo secundário, nesse caso, o eixo 'y', vertical*/
+    margin-top: 7%;
+}
+
+
+
+/*CSS da container do 'Faça seu login', '---OU---' e os botões 'familiar' e 'autoridade'*/
+.login-choice{
+    width: 100%; /* da largura do card-login - 850px, acrescentando o padding de 20px do card-login */
+    padding-bottom: 20px;/*'padding-bottom: 20px', margem de baixo */
+    display: flex;/*'display: flex', transforma um espaço em um flex-container, pra alinhar e distribuir os itens.*/
+    flex-direction: column;/*'flex-direction: column', direção em que os itens vão se organizar, nesse caso, em colunas*/
+    align-items: center;/*'align-items: center', alinha os itens no centro do container, no eixo secundário, nesse caso, o eixo 'y', vertical*/
+}
+
+.login-choice h4{
+    font-size: 2.5rem;
+}
+
+
+/*CSS da conatainer do 'OU'*/
+.or-container{
+    width: 100%;/* 100% da largura do card-login - 850px, acrescentando o padding de 20px do card-login */
+    display: flex;/*'display: flex', transforma um espaço em um flex-container, pra alinhar e distribuir os itens.*/
+    justify-content: center;/*'justify-content: center', alinha os itens no centro do container, no eixo principal, nesse caso, o eixo 'x', horizontal*/
+    align-items: center;/*'align-items: center', alinha os itens no centro do container, no eixo secundário, nesse caso, o eixo 'y', vertical*/
+    column-gap: 1%;/*'column-gap: 1%', espaço entre as colunas, nesse caso, as duas linhas do 'OU', 1% da largura do card login - 850px*/
+}
+
+
+/*CSS da linha esquerda do 'OU'*/
+.left-line-or{
+    width: 43%;/*43% da largura do card-login - 850px, acrescentando o padding de 20px do card-login*/
+    border: 1px solid #a8a8a8;/* Grossura e Cor da da linha*/
+}
+
+
+/*CSS da palavra 'OU'*/
+h2{
+    font-weight: 100;
+    color: #a8a8a8;
+    padding: 0px 1%;/*'padding: 0px 1%', padding é outro tipo de margem, de dentro dos itens, o valor '0px' é a margem da altura, '1%' a margem da largura, 1% de 850px do card-login*/
+      
+}
+
+ form{
+    width: 90%;
+ }
+
+.login-choice{
+    width: 90%;
+}
+
+.login-choice span{
+    color: #2065AA;
+}
+/*CSS da linha esquerda do 'OU'*/
+.right-line-or{
+    width: 43%;/*43% da largura do card-login - 850px, acrescentando o padding de 20px do card-login*/
+    border: 1px solid#a8a8a8;/* Grossura e Cor da da linha*/
+
+}
+
+
+/*CSS da container dos botões 'familiar e autoridade'*/
+.container-btns-choice{
+    width: 100%;/*100% da largura do card-login - 850px, acrescentando o padding de 20px do card-login*/
+    display: flex;/*'display: flex', transforma um espaço em um flex-container, pra alinhar e distribuir os itens.*/
+    justify-content: center;/*'justify-content: center', alinha os itens no centro do container, no eixo principal, nesse caso, o eixo 'x', horizontal*/
+    column-gap: 1.5%;/*'column-gap: 1.5%', espaço entre as colunas, nesse caso, as duas linhas do 'OU', 1.5% da largura do card login - 850px*/
+}
+
+
+/*CSS dos botões 'familiar e autoridade'*/
+.btns-choice{
+    width: 50%; /*50% da largura do card-login - 850px, acrescentando o padding de 20px do card-login*/
+    height: 50px;/*50 pixels de altura*/
+    background-color:  #2065AA;/*Cor de fundo*/
+    border-radius: 20px;/*Bordas arrendondadas*/  
+    border-style: none;/*Estilo das bordas 'none' - nenhum*/  
+    cursor: pointer;/*Ao passar o mouse por cima, a seta vira uma mõa com o indicador levantado.*/  
+    transition: all 0.5s;/*Transição de 0.5 segundos após tirar o cursor do botão*/  
+}
+
+
+/*CSS da hover dos botões 'familiar e autoridade'*/
+.btns-choice:hover{
+    background-color:  #028eb5;/*Cor de fundo*/
+    transition: all 0.5s;/*Transição de 0.5 segundos após colocar o cursor do botão*/  
+}
+
+
+/*CSS da tesxto dos botões 'familiar e autoridade'*/
+.btns-choice > a{
+    color: #ffffff;/*Cor do texto'*/
+    text-decoration: none;/*Tira decorações de padrão do HTMl'*/
+    font-weight: 500;/*Grossura da fonte*/
+    font-size: 18px/*Tamanho da fonte'*/
+}
+
+
+/*CSS dos Inputs'*/
+.form-dates{
+    width: 100%;/*100% da largura do card-login - 850px, acrescentando o padding de 20px do card-login*/
+    display: flex;/*'display: flex', transforma um espaço em um flex-container, pra alinhar e distribuir os itens.*/
+    flex-direction: column;/*'flex-direction: column', direção em que os itens vão se organizar, nesse caso, em colunas*/
+    row-gap: 20px;/* Espaços entre as linhas*/
+    
+}
+
+
+/*CSS dos Inputs'*/
+.form-dates > input{
+    width: 100%;/*100% da largura do card-login - 850px, acrescentando o padding de 20px do card-login*/
+    height: 50px;/*50 pixels de altura*/
+    background: #e3efff;/*Cor de fundo*/
+    border-radius: 8px;/*Bordas arrendondadas*/  
+    border-style: none;/*Estilo da borda, nenhum*/
+    font-size: 1.2rem;
+    transition: all 0.5s;/*Transição de 0.5 segundos após tirar o cursor do botão*/  
+}
+
+
+/*CSS do placeholder dos Inputs'*/
+.form-dates > input::placeholder{
+    padding: 10px;/*Espaçamento de todos os lados*/
+    font-weight: 200;/*Grossura da fonte*/
+}
+
+
+/*CSS para interação da borda dos Inputs'*/
+.form-dates > input:focus{
+    box-shadow: 0 0 0 0;/*Tira sombra do input quem vem no padrão HTML*/
+    outline-style: none;/*Tira a linha que fica e vem do HTML por padrão quando clicamos no input'*/
+}
+
+
+/*CSS para container do 'Entrar na Conta' e 'Não possui uma conta'*/
+.actions{
+    width: 100%;/*100% da largura do card-login - 850px, acrescentando o padding de 20px do card-login*/
+    display: flex;/*'display: flex', transforma um espaço em um flex-container, pra alinhar e distribuir os itens.*/
+    flex-direction: column;;/*'flex-direction: column', direção em que os itens vão se organizar, nesse caso, em colunas*/
+    align-items: center;/*'align-items: center', alinha os itens no centro do container, no eixo secundário, nesse caso, o eixo 'y', vertical*/
+    row-gap: 15px ;/*15px de espaçamento entre as linhas*/
+    
+    
+}
+.action-account a{
+    color: #2065AA;
+}
+
+.actions button{
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #2065AA;
+}
+
+
+/*CSS para o botão Entrar na conta*/
+.sign-in{
+    width: 100%;/*100% da largura do card-login - 850px, acrescentando o padding de 20px do card-login*/
+    height: 50px;/*Altura de 50px*/
+    border-radius: 8px;/*Bordas arrendondadas*/ 
+    border-style: none;/*Estilo das bordas, nenhum*/ 
+    font-size: 15px;/*Tamanho da fonte*/
+    font-weight: 100;/*Grossura da fonte*/
+    color: #EFF3F8;/*Cor do texto*/
+    background: #00B7EA;/*Cor de fundo*/
+    transition: all 0.5s;/*Transição de 0.5 segundos após tirar o cursor do botão*/  
+    cursor: pointer;/*Ao passar o mouse por cima, a seta vira uma mõa com o indicador levantado.*/  
+
+}
+
+
+/*CSS da hover do btn 'Entra na conta'*/
+.sign-in:hover{
+    background-color:  #028eb5;/*Cor de fundo*/
+    transition: all 0.5s;/*Transição de 0.5 segundos após colocar o cursor do botão*/  
+}
+
+/*Container para 'Não Possui uma conta?' e 'Criar conta'*/
+.actions-account{
+    display: flex;
+}
+
+
+/*CSS para 'Criar conta'*/
+.actions > .action-account > a{
+    font-size: 18px;/*Tamanho da fonte*/
+    text-decoration: none;
+    color: #2065AA;
+}
+
+
+/*CSS do Retângulo escuro do footer*/
+.navy-blue-form-footer{
+    width: 15vw;/*'width: 15vw', largura do retângulo do cabeçalho em 15vw, 15% da largura do viewport width, ou seja, 10% da largura da tela do dispositivo*/
+    height: 5vh;/*'height: 10vh', altura do retângulo do cabeçalho em 10vh, 10% da altura do viewport height, ou seja, 10% da altura da tela do dispositivo*/
+    margin-top: 5vh; /* Espaço para baixo*/
+    position: fixed;/*Posição Fixa, acima de tudo*/
+    background:#121220;/*Cor de Fundo*/
+
+    
+   
+}
+
+
+/*CSS do Retângulo ciano do footer*/
+.cien-form-footer{
+    background: #2065AA;/*Cor do retângulo*/
+    width: 10vw;/*'width: 10vw', largura do retângulo do cabeçalho em 10vw, 10% da largura do viewport width, ou seja, 10% da largura da tela do dispositivo*/
+    height: 10vh;/*'height: 10vh', altura do retângulo do cabeçalho em 10vh, 10% da altura do viewport height, ou seja, 10% da altura da tela do dispositivo*/
+    opacity: 0.8;/*'opacity:0.8' configura a opacidade do elemento entre 0.1 e 1.0, o maior valor deixa mais visível, e o menor menos vísivel   */
+
+}
+
+
+/*CSS do footer*/
+footer{
+    width: 100vw;/*'width: 100vw', largura do cabeçalho em 100vw, 100% da largura do viewport width, ou seja, 100% da largura da tela do dispositivo*/
+    height: 10vh;/*'height: 100vh', altura do cabeçalho em 10vw, 10% da altura do viewport height, ou seja, 10% da altura da tela do dispositivo*/
+
+}
+
+
+/*Condições de Responsividade quando a tela tiver no máximo 1000px de largura */
+
+
+
+/*Condições de Responsividade quando a tela tiver no máximo 780px de altura */
+@media screen and (max-height:780px){
+
+    .navy-blue-form-header, .cien-form-header, .navy-blue-form-footer, .cien-form-footer{
+        display: none;
+    }
+
+
+
+    .card-sign-in{
+        width: 100vw;
+        height: 100vh;
+ 
+
+
+    }
+    
+}
+
+
+
+
+
+
+
+  
+    
+
+
+
+
+
+
